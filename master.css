@@ -1,0 +1,764 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family:"Heebo", Sans-serif;
+}
+
+#upNAv {
+    height: 8vh;
+    background-color: black;
+    color: #ddd;   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+#icon i {
+    background-color: #ffffff;
+    color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 15px;
+}
+@media (max-width: 1124px){
+    #upNAv {
+        display: none;
+    }
+}
+/*end up nav*/
+
+/*start down nav*/
+#downNav {
+    height: 15vh;
+    color: #000;
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#downNav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+#downNav ul li {
+    margin-left: 1.3rem;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+#downNav ul li:hover {
+    border-bottom: 2px solid black;
+    padding: 0;
+}
+
+#downNav h2 {
+    padding-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+#downNav span {
+    margin: 0 1rem;
+}
+#downNav #One {
+    font-size: 30px;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    #downNav ul , span  {
+        display: none;
+    }
+}
+@media (max-width: 992px) {
+    #downNav ul , span  {
+        display: none;
+    }
+}
+#secOne {
+    min-height: 100vh;
+    background-color: #ddd;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+@media (min-width: 768px) {
+    #secOne {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: fit-content;
+        width: 100%;
+        padding: 0;
+        overflow: hidden;
+    }
+}
+#secOne #First {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 6rem;
+    
+}
+#secOne #First  h2 {
+    font-size: 40px;
+    font-weight: 500;
+}
+#secOne #First p {
+    color: #665f5f;
+}
+#secOne #First button {
+    padding: 15px;
+    background-color: black;
+    color: white;
+}
+
+#secOne #First button:hover {
+    background-color: white;
+    color: black;
+}
+
+
+#secOne #seconde {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+#secOne #seconde #firstimg {
+    background-color: #ece8e0;
+    border-radius: 50% 50%;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+#secOne #seconde #firstimg:hover {
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 768px) {
+    #secOne #seconde #firstimg {
+        background-color: transparent;
+    }
+}
+@media (max-width: 768px) {
+    #secOne #seconde #firstimg .hiddenImage {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    #secOne #seconde #firstimg .visibleImage {
+        display: flex;
+        flex-direction: column;
+    }
+}
+                                            /* End Section One */
+                                            /* Start Section Two */
+
+#secondeSec {
+    min-height: 40vh;
+    background-color: #ffffff;
+    margin: -40px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+@media (max-width: 768px) {
+    #secondeSec  {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-content: center;
+        width: 100%;
+        height: 130vh;
+    }
+}
+
+#secondeSec #sec2d1,#sec2d2,#sec2d3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #ddd;
+    max-height: 150px;
+    width: 30%;
+}
+#textDiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    padding: 15px;
+    font-family: "Heebo", Sans-serif;
+}
+#textDiv p {
+    color:#D1BC92;
+}
+#textDiv  h2 {
+    font-size: 25px;
+    padding-bottom: 5px;
+}
+#textDiv span {
+    font-size: 15px;
+    padding-right: 5px;
+}
+#textDiv i {
+    color: grey;
+    font-size: 13px;
+}
+
+@media (max-width: 768px) {
+    #secondeSec div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+}
+                                        /* End Section Two */
+                                        /* Start Section Tree*/
+#secTree {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+#secTree div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#folwSecTree {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+} 
+#folwSecTree .stars {
+    display: flex!important;
+    flex-direction: row;
+}
+#folwSecTree .stars i {
+    display: flex!important;
+    flex-direction: row;
+    font-size: 13px;
+    color: #D1BC92;
+    font-weight: bold;
+}
+#folwSecTree .stars  #active {
+    color: gray;
+    font-weight: 100;
+}
+#folwSecTree h3 {
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    white-space: nowrap;
+}
+#folwSecTree span {
+    font-size: 16px;
+}
+#folwSecTree a {
+    font-size: 12px;
+    color: black;
+}
+#secFour {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center ;
+    column-gap: 30px;
+}
+
+#left {
+    background-image: url(left.jpg);
+    background-position: center ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 60px;
+}
+@media (max-width: 768px) {
+    #secFour {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #left {
+        margin-bottom: 5rem;
+        flex:1;
+    }
+}
+
+#left h3 {
+    font-size: 38px;
+    font-weight: bold;
+}
+#left p {
+    color: #D1BC92;
+}
+
+
+#left #arrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#left #arrow i {
+    vertical-align: middel;
+    font-size: 20px;
+    padding-left: 5px;
+}
+#right {
+    background-image: url(right.jpg);
+    background-position: center ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 60px;
+}
+#right h3 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#right p {
+    color: #d1bc92;
+}
+
+/* End Sectioon Four */
+
+#horizintal {
+    height: 20vh;
+    display: flex;
+    flex-flow: row Wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    column-gap: 20px;
+}
+#horizintal hr {
+    width: 30%;
+}
+#horizintal p {
+    font-size: 25px;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    #horizintal hr{
+        width: 20%;
+    }
+    #horizintal p {
+        font-size: 16px;
+    }
+}
+#secFive {
+    min-height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+#secFive #d1sec5 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#secFive #textunderimage {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    row-gap: 10px;
+    white-space: nowrap;
+}
+#secFive  .stars {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+#secFive  .stars i {
+    color: #d1bc92;
+    font-weight: bold;
+}
+#secFive #textunderimage h3 {
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: bold;
+}
+#secFive #textunderimage span {
+    white-space: no-wrap;
+
+}
+#secFive #textunderimage a {
+    white-space: no-wrap;
+    font-size: 16px;
+    color: black;
+    
+}
+
+/* End Section Five */
+
+/* Staart Section Six */
+
+#secSix {
+    min-height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+#secSix #d1sec5 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#secSix #d1sec5::before {
+    content: 'SALE!';
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #d1bc92;
+    position: absolute;
+    top: -15px;
+    right: 40px;
+    text-align: center;
+    line-height: 3rem;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 500;
+}
+@media (max-width: 768px) {
+    #secSix #d1sec5::before {
+        position: absolute;
+        top: -15px;
+        right: 245px;
+    }
+}
+#secSix #textunderimage {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    row-gap: 10px;
+    white-space: nowrap;
+}
+#secSix  .stars {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+#secSix  .stars i {
+    color: #d1bc92;
+    font-weight: bold;
+}
+#secSix #textunderimage h3 {
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: bold;
+}
+#secSix #textunderimage span {
+    white-space: no-wrap;
+
+}
+#secSix #textunderimage a {
+    white-space: no-wrap;
+    font-size: 16px;
+    color: black;
+}
+/* End Section Six*/
+
+/* Start Section Seven*/
+#secSeven {
+    min-height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    column-gap: 25px;
+}
+#secSeven #dOne {
+    height: 90vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #ddd;
+}
+
+#secSeven #dOne #text {
+    height: 100%;
+}
+#secSeven #dOne #text #up {
+    height: 85%;
+    text-align: right;
+}
+#secSeven #dOne #text #down {
+    height: 2%;
+    text-align: right;
+}
+#secSeven #dTwo {
+    height: 42.5vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd;
+}
+#secSeven #dTwo #text #up {
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+#secSeven #dTwo #text #down {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+#secSeven #dTwo #text #down #icon {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+#secSeven #dThree {
+    height: 42.5vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd;
+}
+#leftdivs {
+    display: grid;
+    row-gap: 30px;
+}
+#secSeven #dThree #text{
+    text-align: right;
+}
+#secSeven #dThree #text #up {
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+#secSeven #dThree #text #down {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+#secEight {
+    background-color: #ddd;
+    min-height: 60vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    cursor: pointer;
+    line-height: 30px;
+}
+#secEight #client {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+#secEight #client #circle span {
+    border-radius: 50%;
+    border:1px solid #000;
+    padding-left: 6px;
+    margin-left: 3px;
+}
+#secEight #client img {
+    padding-bottom: 10px;
+    border-radius: 50%;
+}
+#secNine {
+    display: flex;
+    flex-direction: row;
+}
+#secNine .parent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    column-gap: 20px;
+}
+#secNine .parent div{
+    border: 1px solid #ddd;
+}
+#secTen {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+}
+#secTen #child1 {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+#secTen #child1 #up,
+#two,
+#three,
+#four {
+    display: flex;
+    flex-direction: row;
+}
+
+#secTen #child2,
+#child3,
+#child4 {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+#secTen #child1 #up,
+#two,
+#three,
+#four,
+i {
+    padding-right: 5px;
+}
+#secTen #pragraph {
+    color: #676565;
+}
+footer {
+    height: 80vh;
+    width: 100%;
+    background-color: #ddd;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+#bigfooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+#bigfooter #firstDiv div  {
+    padding-bottom: 33px;
+}
+#bigfooter #firstDiv  {
+    padding-top: 40px;
+}
+#bigfooter  h3 {
+    font-size: 17px;
+    font-weight: bold;
+    color: #000;
+}
+#bigfooter p,span  {
+    color: #7a7a7a;
+} 
+#bigfooter  i {
+    color: #000;
+} 
+#bigfooter #ico4  i {
+    color: #292929;
+    font-size: 30px;
+} 
+
+footer hr {
+    width: 35%;
+    border: 1px solid #000;
+    color: #000;
+}
+#finalDiv {
+    padding: 0px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ddd;
+}
+#finalDiv #oneFinal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
